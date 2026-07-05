@@ -1,0 +1,311 @@
+Create a complete enterprise-grade E-Commerce Admin Panel using Angular 17+ frontend and NestJS backend.
+
+Follow all repository instructions, agent instructions, and skills workflows.
+
+Frontend must be developed first using environment.useMockData=true.
+
+After frontend implementation, automatically handoff to backend agent to create all required APIs, PostgreSQL persistence, DTOs, entities, migrations, authentication, and Swagger documentation.
+
+After backend completion, automatically handoff to integration agent to replace mock implementations with real APIs and disable useMockData.
+
+Requirements:
+
+Modules:
+
+1. Dashboard
+   - Revenue KPIs
+   - Orders Summary
+   - Customers Summary
+   - Best Selling Products
+   - Sales Trend Charts
+   - Inventory Alerts
+
+2. Authentication & Authorization
+   - Login
+   - Logout
+   - Forgot Password
+   - Reset Password
+   - JWT Authentication
+   - Roles
+   - Permissions
+
+3. Product Management
+   - Product List
+   - Product Details
+   - Create Product
+   - Edit Product
+   - Delete Product
+   - Product Status
+   - Product SEO Information
+   - Product Variants
+   - Product Images
+
+4. Category Management
+   - Category CRUD
+   - Nested Categories
+   - Active/Inactive Status
+
+5. Inventory Management
+   - Stock Tracking
+   - Low Stock Alerts
+   - Inventory Adjustments
+   - Warehouse Management
+
+6. Customer Management
+   - Customer Profiles
+   - Customer Orders
+   - Customer Addresses
+   - Customer Activity Timeline
+
+7. Order Management
+   - Order Tracking
+   - Order Details
+   - Order History
+   - Order Status Workflow
+   - Returns Handling
+
+8. Payments
+   - Payment History
+   - Refunds
+   - Transaction Logs
+
+9. Coupon & Promotion Management
+   - Coupons
+   - Discounts
+   - Campaigns
+   - Promotion Rules
+
+10. Reviews & Ratings
+    - Product Reviews
+    - Moderation Workflow
+
+11. Shipping Management
+    - Shipping Providers
+    - Tracking Information
+    - Delivery Status
+
+12. Reports & Analytics
+    - Sales Reports
+    - Product Reports
+    - Customer Reports
+    - Revenue Reports
+    - Export to Excel
+
+13. Notification Center
+    - Low Stock Notifications
+    - New Order Notifications
+    - System Alerts
+
+14. User Management
+    - Admin Users
+    - Roles
+    - Permissions
+
+15. Settings
+    - Store Settings
+    - Tax Settings
+    - Currency Settings
+    - Email Templates
+
+Frontend Requirements:
+
+- Angular 17+
+- Standalone Components
+- Angular Signals
+- Angular Material
+- Responsive Design
+- Microsoft Fluent Design style
+- Route Guards
+- Lazy Loading
+- Typed Reactive Forms
+- Mock Data Support
+- Comprehensive Unit Tests
+
+Backend Requirements:
+
+- NestJS 10+
+- PostgreSQL
+- TypeORM
+- JWT Authentication
+- Refresh Token Rotation
+- Swagger Documentation
+- DTO Validation
+- Migrations
+- Repository Pattern
+- Soft Deletes
+
+Integration Requirements:
+
+- Automatically migrate services from mock data to API endpoints.
+- Components must remain unchanged.
+- Disable useMockData.
+- Remove mock files once integration succeeds.
+
+Generate complete production-ready code structure and files.
+------------------
+Create a complete enterprise-grade CRM (Customer Relationship Management) platform using Angular 17+ frontend and NestJS backend.
+
+Follow all repository instructions, agents, and skills.
+
+Frontend must be implemented first using mock services and environment.useMockData=true.
+
+After frontend implementation, automatically handoff to backend agent.
+
+Backend must create PostgreSQL persistence, DTOs, entities, migrations, repository layer, Swagger, authentication, and APIs.
+
+After backend completion, automatically handoff to integration agent to replace frontend mock services with backend APIs.
+
+Modules:
+
+1. Dashboard
+   - Revenue Summary
+   - Open Opportunities
+   - Sales Funnel
+   - Leads Overview
+   - Conversion Metrics
+   - Task Summary
+
+2. Authentication & Authorization
+   - Login
+   - Logout
+   - Forgot Password
+   - Reset Password
+   - Roles
+   - Permissions
+
+3. Lead Management
+   - Lead List
+   - Lead Details
+   - Lead Assignment
+   - Lead Status Tracking
+   - Lead Source Management
+
+4. Contact Management
+   - Contact Profiles
+   - Activity Timeline
+   - Notes
+   - Tags
+
+5. Account Management
+   - Companies
+   - Business Accounts
+   - Relationships
+   - Contacts
+
+6. Opportunity Management
+   - Sales Pipeline
+   - Opportunity Stages
+   - Forecasting
+   - Win/Loss Tracking
+
+7. Task Management
+   - Tasks
+   - Reminders
+   - Calendar Integration
+   - Follow-up Scheduling
+
+8. Activity Management
+   - Emails
+   - Calls
+   - Meetings
+   - Notes
+
+9. Customer Support
+   - Tickets
+   - Ticket Assignment
+   - SLA Tracking
+   - Resolution Workflow
+
+10. Quote Management
+    - Quotes
+    - Approvals
+    - PDF Generation
+
+11. Marketing Management
+    - Campaign Management
+    - Email Campaigns
+    - Campaign Tracking
+
+12. Workflow Automation
+    - Automated Follow-ups
+    - Lead Assignment Rules
+    - Notification Rules
+
+13. Reports & Analytics
+    - Pipeline Reports
+    - Sales Reports
+    - Lead Conversion Reports
+    - Activity Reports
+
+14. User Management
+    - CRM Users
+    - Roles
+    - Permissions
+
+15. Settings
+    - Company Settings
+    - CRM Preferences
+    - Email Templates
+
+Frontend Requirements:
+
+- Angular 17+
+- Angular Material
+- Standalone Components
+- Signals
+- Responsive UI
+- Fluent Design UI
+- Advanced Data Grids
+- Route Guards
+- Mock Data Support
+- Unit Tests
+
+Backend Requirements:
+
+- NestJS 10+
+- PostgreSQL
+- TypeORM
+- JWT Authentication
+- RBAC (Role Based Access Control)
+- Swagger
+- DTO Validation
+- Migrations
+- Soft Deletes
+- Audit Logging
+
+Integration Requirements:
+
+- Automatically migrate services from mock data to backend APIs.
+- Disable useMockData.
+- Remove mock services.
+- Verify frontend-backend contract compatibility.
+- Ensure components remain unchanged.
+
+Generate complete production-ready architecture, folder structure, files, code, tests, database schema, and API documentation.
+-------------------
+Create an Enterprise E-Commerce Admin Panel.
+
+Modules:
+
+- Dashboard
+- Products
+- Categories
+- Inventory
+- Customers
+- Orders
+- Coupons
+- Shipping
+- Reviews
+- Reports
+- User Management
+- Roles & Permissions
+- Settings
+
+Requirements:
+
+- Production-ready architecture
+- Responsive design
+- Advanced filtering
+- Export to Excel
+- Audit logs
+- Notifications
