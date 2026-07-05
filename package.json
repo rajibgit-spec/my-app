@@ -1,0 +1,19 @@
+{
+  "name": "my-app",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run fe\" \"npm run be\"",
+    "fe": "cd frontend && npm start",
+    "be": "cd backend && npm run start:dev",
+    "fe:test": "cd frontend && npm test",
+    "be:test": "cd backend && npm test",
+    "fe:build": "cd frontend && npm run build",
+    "be:build": "cd backend && npm run build",
+    "fe:lint": "cd frontend && npm run lint",
+    "be:lint": "cd backend && npm run lint",
+    "lint": "concurrently \"npm run fe:lint\" \"npm run be:lint\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
