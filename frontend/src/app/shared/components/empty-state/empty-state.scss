@@ -1,0 +1,32 @@
+.empty-state {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 0.7rem;
+  padding: 2.5rem 1.5rem;
+  border: 1px dashed rgba(107, 114, 128, 0.25);
+  border-radius: 1rem;
+  background: rgba(248, 250, 252, 0.9);
+
+  .icon-wrap {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: rgba(109, 124, 255, 0.12);
+    color: #6d7cff;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #111827;
+  }
+
+  p {
+    margin: 0;
+    max-width: 30rem;
+    color: #6b7280;
+  }
+}

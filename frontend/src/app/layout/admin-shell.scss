@@ -1,0 +1,110 @@
+.app-shell {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7ff 0%, #eef2ff 100%);
+}
+
+.sidenav-container {
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 270px;
+  background: rgba(15, 23, 42, 0.96);
+  color: white;
+  border-right: 1px solid rgba(255,255,255,0.06);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1.3rem 1.2rem 1rem;
+
+  .brand-mark {
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 0.8rem;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    background: linear-gradient(135deg, #6d7cff, #8b5cf6);
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  p {
+    margin: 0.2rem 0 0;
+    color: rgba(255,255,255,0.68);
+    font-size: 0.82rem;
+  }
+}
+
+.mobile-brand {
+  padding-bottom: 0.8rem;
+}
+
+.mobile-drawer {
+  width: min(84vw, 280px);
+  background: rgba(15, 23, 42, 0.97);
+  color: white;
+}
+
+mat-nav-list a {
+  border-radius: 0.9rem;
+  margin: 0.25rem 0.75rem;
+  color: white;
+  font-weight: 600;
+  .mdc-list-item__primary-text{
+    color: white;
+  }
+}
+
+mat-nav-list a.active {
+  background: rgba(109, 124, 255, 0.18);
+  color: white;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.15rem 1.4rem;
+  background: rgba(255,255,255,0.78);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(17, 24, 39, 0.06);
+}
+
+.toolbar-title {
+  h2 {
+    margin: 0;
+    font-size: 1.08rem;
+    color: #111827;
+  }
+
+  .eyebrow {
+    margin: 0 0 0.25rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #6d7cff;
+  }
+}
+
+.toolbar-actions {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.content-area {
+  padding: 1.35rem;
+}
+
+@media (max-width: 768px) {
+  .content-area {
+    padding: 1rem;
+  }
+}

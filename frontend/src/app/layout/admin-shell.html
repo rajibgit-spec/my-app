@@ -1,0 +1,75 @@
+<div class="app-shell">
+  <mat-sidenav-container class="sidenav-container">
+    @if (!isMobile()) {
+      <mat-sidenav opened mode="side" class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">A</div>
+          <div>
+            <h1>Artemis</h1>
+            <p>Commerce Admin</p>
+          </div>
+        </div>
+
+        <mat-nav-list>
+          @for (item of navItems; track item.route) {
+            <a
+              mat-list-item
+              [routerLink]="item.route"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: false }"
+            >
+              <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+              <span matListItemTitle>{{ item.label }}</span>
+            </a>
+          }
+        </mat-nav-list>
+      </mat-sidenav>
+    }
+
+    @if (isMobile()) {
+      <mat-sidenav #drawer mode="over" [opened]="menuOpen()" class="mobile-drawer">
+        <div class="brand mobile-brand">
+          <div class="brand-mark">A</div>
+          <div>
+            <h1>Artemis</h1>
+            <p>Commerce Admin</p>
+          </div>
+        </div>
+        <mat-nav-list>
+          @for (item of navItems; track item.route) {
+            <a mat-list-item (click)="goTo(item.route)">
+              <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+              <span matListItemTitle>{{ item.label }}</span>
+            </a>
+          }
+        </mat-nav-list>
+      </mat-sidenav>
+    }
+
+    <mat-sidenav-content>
+      <header class="topbar">
+        @if (isMobile()) {
+          <button mat-icon-button (click)="toggleMenu()" aria-label="Open menu">
+            <mat-icon>menu</mat-icon>
+          </button>
+        }
+        <div class="toolbar-title">
+          <p class="eyebrow">Operations</p>
+          <h2>Premium commerce control center</h2>
+        </div>
+        <div class="toolbar-actions">
+          <button mat-icon-button aria-label="Search">
+            <mat-icon>search</mat-icon>
+          </button>
+          <button mat-icon-button aria-label="Notifications">
+            <mat-icon>notifications</mat-icon>
+          </button>
+        </div>
+      </header>
+
+      <main class="content-area">
+        <router-outlet></router-outlet>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
