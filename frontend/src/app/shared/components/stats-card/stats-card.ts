@@ -5,18 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
   selector: 'app-stats-card',
   standalone: true,
   imports: [MatIconModule],
-  template: `
-    <article class="stats-card">
-      <div class="icon-wrap" [class]="tone()">
-        <mat-icon>{{ icon() }}</mat-icon>
-      </div>
-      <div>
-        <p class="label">{{ label() }}</p>
-        <h3>{{ value() }}</h3>
-        <span class="delta">{{ delta() }}</span>
-      </div>
-    </article>
-  `,
+  templateUrl: './stats-card.html',
   styleUrl: './stats-card.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })

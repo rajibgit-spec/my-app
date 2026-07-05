@@ -1,0 +1,10 @@
+<section class="empty-state">
+  <div class="icon-wrap">
+    <mat-icon>{{ icon() }}</mat-icon>
+  </div>
+  <h3>{{ title() }}</h3>
+  <p>{{ description() }}</p>
+  @if (actionLabel()) {
+    <button mat-stroked-button color="primary" (click)="action.emit()">{{ actionLabel() }}</button>
+  }
+</section>

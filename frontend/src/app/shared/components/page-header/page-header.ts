@@ -6,21 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
   selector: 'app-page-header',
   standalone: true,
   imports: [MatButtonModule, MatIconModule],
-  template: `
-    <header class="page-header">
-      <div>
-        <p class="eyebrow">{{ eyebrow() }}</p>
-        <h2>{{ title() }}</h2>
-        <p class="description">{{ description() }}</p>
-      </div>
-      @if (actionLabel(); as actionLabel) {
-        <button mat-flat-button color="primary" (click)="action.emit()">
-          <mat-icon>add</mat-icon>
-          {{ actionLabel }}
-        </button>
-      }
-    </header>
-  `,
+  templateUrl: './page-header.html',
   styleUrl: './page-header.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })

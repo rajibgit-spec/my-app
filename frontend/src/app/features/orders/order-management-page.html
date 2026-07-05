@@ -1,0 +1,55 @@
+<app-page-header
+  eyebrow="Orders"
+  title="Order operations"
+  description="Track fulfillment, support urgent purchases, and keep customer commitments on schedule."
+></app-page-header>
+
+<mat-card class="panel">
+  <mat-tab-group>
+    <mat-tab label="Pending">
+      <div class="tab-content">
+        @for (order of pendingOrders(); track order.id) {
+          <article class="order-card">
+            <div>
+              <h3>#{{ order.id }} · {{ order.customer }}</h3>
+              <p>{{ order.items }} items · {{ order.region }}</p>
+            </div>
+            <mat-chip-set>
+              <mat-chip>{{ order.status }}</mat-chip>
+            </mat-chip-set>
+          </article>
+        }
+      </div>
+    </mat-tab>
+    <mat-tab label="Fulfilled">
+      <div class="tab-content">
+        @for (order of fulfilledOrders(); track order.id) {
+          <article class="order-card">
+            <div>
+              <h3>#{{ order.id }} · {{ order.customer }}</h3>
+              <p>{{ order.items }} items · {{ order.region }}</p>
+            </div>
+            <mat-chip-set>
+              <mat-chip color="accent">{{ order.status }}</mat-chip>
+            </mat-chip-set>
+          </article>
+        }
+      </div>
+    </mat-tab>
+    <mat-tab label="Returns">
+      <div class="tab-content">
+        @for (order of returnsOrders(); track order.id) {
+          <article class="order-card">
+            <div>
+              <h3>#{{ order.id }} · {{ order.customer }}</h3>
+              <p>{{ order.items }} items · {{ order.region }}</p>
+            </div>
+            <mat-chip-set>
+              <mat-chip color="warn">{{ order.status }}</mat-chip>
+            </mat-chip-set>
+          </article>
+        }
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>

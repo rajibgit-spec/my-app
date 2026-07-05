@@ -7,21 +7,7 @@ import { MatMenuModule } from '@angular/material/menu';
   selector: 'app-action-menu',
   standalone: true,
   imports: [MatButtonModule, MatIconModule, MatMenuModule],
-  template: `
-    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="More actions">
-      <mat-icon>more_horiz</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item (click)="edit.emit()">
-        <mat-icon>edit</mat-icon>
-        <span>Edit</span>
-      </button>
-      <button mat-menu-item (click)="archive.emit()">
-        <mat-icon>archive</mat-icon>
-        <span>Archive</span>
-      </button>
-    </mat-menu>
-  `,
+  templateUrl: './action-menu.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ActionMenu {

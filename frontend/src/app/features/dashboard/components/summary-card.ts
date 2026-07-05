@@ -5,13 +5,7 @@ import { MatCardModule } from '@angular/material/card';
   selector: 'app-summary-card',
   standalone: true,
   imports: [MatCardModule],
-  template: `
-    <mat-card class="summary-card">
-      <p class="eyebrow">{{ eyebrow() }}</p>
-      <h3>{{ title() }}</h3>
-      <p class="body">{{ body() }}</p>
-    </mat-card>
-  `,
+  templateUrl: './summary-card.html',
   styleUrl: './summary-card.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })

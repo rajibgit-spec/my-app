@@ -6,18 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
   selector: 'app-empty-state',
   standalone: true,
   imports: [MatButtonModule, MatIconModule],
-  template: `
-    <section class="empty-state">
-      <div class="icon-wrap">
-        <mat-icon>{{ icon() }}</mat-icon>
-      </div>
-      <h3>{{ title() }}</h3>
-      <p>{{ description() }}</p>
-      @if (actionLabel()) {
-        <button mat-stroked-button color="primary" (click)="action.emit()">{{ actionLabel() }}</button>
-      }
-    </section>
-  `,
+  templateUrl: './empty-state.html',
   styleUrl: './empty-state.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })

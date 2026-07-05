@@ -8,24 +8,7 @@ import { Product } from '../product.model';
   selector: 'app-product-card',
   standalone: true,
   imports: [MatCardModule, MatButtonModule, MatIconModule],
-  template: `
-    <mat-card class="product-card">
-      <img [src]="product().imageUrl" [alt]="product().name" />
-      <div class="card-body">
-        <div class="card-head">
-          <div>
-            <h3>{{ product().name }}</h3>
-            <p>{{ product().sku }}</p>
-          </div>
-          <span class="price">\${{ product().price }}</span>
-        </div>
-        <div class="actions">
-          <button mat-stroked-button (click)="edit.emit(product().id)">Edit</button>
-          <button mat-flat-button color="primary" (click)="view.emit(product().id)">View</button>
-        </div>
-      </div>
-    </mat-card>
-  `,
+  templateUrl: './product-card.html',
   styleUrl: './product-card.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })

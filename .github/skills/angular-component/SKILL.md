@@ -184,7 +184,7 @@ Never:
 - Use constructor injection
 - Import mock files directly
 - Perform HTTP calls directly from components
-
+- inline templates or styles
 ---
 
 # Step 4 - Generate Template
